@@ -3,6 +3,7 @@ from autof2.interface import window
 from autof2.interface import clipboard
 from autof2.navigation import navigation
 from autof2.readf2 import parse
+import database
 
 import ast
 import time
@@ -129,8 +130,11 @@ def interpret(f2_system, filename, perimeters, batch):
                 command_order = data.split('-')
                 navigation.to_menu(command_order)
                 print("done")
-
-
+            elif cmd == "update_assortment":
+                database.get_list(perimeters[data])
+            elif cmd == "add_to_supplier":
+                supplier, assortment = data.split('-')
+                database.add_to_supplier(perimeters[supplier],perimeters[assortment])
 
 
 
