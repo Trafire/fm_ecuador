@@ -1,0 +1,8 @@
+run_script	scripts/per_purchase_input.f2s
+run_script	scripts/select_shipment.f2s
+send	{ENTER}
+sleep	0.5
+if_not_insert	Bought for  :
+batch	input_purchase
+sleep	0.5
+run_script	scripts/print_purchase_details.f2s

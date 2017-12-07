@@ -1,0 +1,4 @@
+send	{INSERT}
+perimeter_send	supplier
+send	{ENTER}
+perimeter_send	invoice_num

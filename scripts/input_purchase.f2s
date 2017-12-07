@@ -1,0 +1,16 @@
+perimeter_send	assortment
+send	{enter 2}
+send	{DOWN 2}
+send	{F10}
+perimeter_send	price
+send	{enter}
+send	{F10}
+perimeter_send	price
+send	{enter}
+perimeter_send	quantity
+send	{enter}
+perimeter_send	packing
+send	{enter}
+perimeter_send	supplier
+send	{F11}
+send	y

@@ -1,0 +1,8 @@
+go_to	main_menu
+go_to_date	input_purchases_mix
+send	{F11}
+run_script	scripts/select_shipment.f2s
+send	{ENTER}
+multi_paged_2	6-25-supplier-invoice_num
+if_not_same_line	supplier-invoice_num-scripts/new_invoice.f2s
+send	{ENTER}

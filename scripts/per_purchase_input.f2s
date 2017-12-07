@@ -1,0 +1,3 @@
+go_to	main_menu
+go_to_date	Input purchases (PS)
+verify_screen	[('Input purchases Flowers', 2, 92), ('Article', 29, 4), ('Buyer  :', 29, 59), ('Available', 21, 54), ('Bought for  :', 30, 4)]

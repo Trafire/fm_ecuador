@@ -1,0 +1,13 @@
+go_to	main_menu
+go_to_menu	Purchase-Purchase details (suppl)-Without distribution
+send	{HOME}
+send	{ENTER}
+perimeter_send	date
+send	{ENTER}
+perimeter_send	date
+send	{ENTER}
+perimeter_send	supplier
+send	{ENTER}
+sleep	0.5
+send	Laserprinter
+send	{ENTER}

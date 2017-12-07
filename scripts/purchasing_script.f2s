@@ -1,0 +1,4 @@
+go_to	main_menu
+go_to_date	input_purchase
+verify_screen	[('Input purchases Flowers', 2, 92), ('Article', 29, 4), ('Buyer  :', 29, 59), ('Available', 21, 54), ('Bought for  :', 30, 4)]
+batch	input_purchase
