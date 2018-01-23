@@ -4,7 +4,7 @@ perimeter_send	awb
 send	{ENTER}
 perimeter_send	shipment_code
 send	{DOWN}
-send	{DOWN}
+send	{ENTER}
 send	{DOWN}
 send	' '
 perimeter_copy_paste	logistical_route

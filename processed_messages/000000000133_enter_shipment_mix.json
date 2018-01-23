@@ -1,0 +1,1 @@
+{"command": "scripts/enter_shipment_mix2.f2s", "parameters": {"awb": "123-456-789", "shipment_code": "02-MIA", "date": "07/01/18", "logistical_route": "MIA-YYZ (truck)", "invoice_num": "", "supplier": "CAROPR"}, "f2_data": [{"quantity": "25", "packing": "1", "box_size": "E04", "assortment": "mirsweet0", "price": "0,56", "supplier": "CAROPR"}], "system": "f2Canada"}

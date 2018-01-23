@@ -1,0 +1,1 @@
+{"system": "f2Canada", "f2_data": [{"packing": 25, "box_size": "H10", "assortment": "flxmagti0", "price": "1.85", "quantity": 17, "supplier": "CADENS"}], "parameters": {"shipment_code": "49-MIAG3", "awb": "123-456-789", "date": "25/12/17", "invoice_num": "9876", "logistical_route": "MIA-YYZ (truck)", "supplier": "CADENS"}, "command": "scripts/enter_shipment_mix2.f2s"}

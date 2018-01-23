@@ -1,0 +1,13 @@
+{
+  "command": "scripts/enter_shipment_mix.f2s",
+  "system" : "f2Canada",
+  "parameters": {"date":"10/12/17","awb": "123-456-789", "shipment_code":"50-MIA","logistical_route":"MIA-YYZ (truck)","supplier" : "CACHIL","invoice_num":"024302"},
+  "f2_data": [
+    {"assortment":"pesCorac0", "box_size":"H12",
+    "price": "2.65","quantity":1, "packing":80,"supplier":"CACHIL"},
+    {"assortment":"pesduche6w", "box_size":"H12",
+    "price": "1.65","quantity":1, "packing":120,"supplier":"CACHIL"},
+    {"assortment":"pesheboc0", "box_size":"H12",
+    "price": "2.85","quantity":1, "packing":50,"supplier":"CACHIL"}
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "command": "scripts/enter_shipment_mix.f2s",
+  "lastName": "Smith",
+  "isAlive": true,
+  "age": 27,
+  "address": {
+    "streetAddress": "21 2nd Street",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10021-3100"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "children": [],
+  "spouse": null,
+  "system" : "f2Canada",
+  "parameters": {"date":"19/12/17","awb": "123-456-789", "shipment_code":"61-MIAG","logistical_route":"MIA-YYZ (truck)","supplier" : "CAPRIN","invoice_num":"9876"},
+  "f2_data": [
+    {"assortment":"uni.B0zI5u", "box_size":"Q06",
+    "price": "1.05","quantity":65, "packing":15,"supplier":"CAPRIN"},
+    {"assortment":"hychydwh6w", "box_size":"Q06",
+                      "price": "1.05","quantity":20, "packing":20,"supplier":"CAPRIN"}
+  ]
+}

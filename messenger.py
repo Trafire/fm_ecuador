@@ -33,4 +33,8 @@ while True:
             else:
                 print(validate(data)[1])
         os.rename(filename, 'processed_' + filename)
-        time.sleep(3)
+        time.sleep(3
+
+
+
+                   )

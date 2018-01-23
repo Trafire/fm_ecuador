@@ -13,7 +13,7 @@ def interpret(f2_system, filename, perimeters, batch):
     window.get_window()
     with open(filename, 'r') as script:
         for line in script:
-            time.sleep(.1)
+            #time.sleep(.1)
             cmd, data = line.split('\t')
             data = data.strip()
             cmd = cmd.strip().lower()
@@ -73,6 +73,7 @@ def interpret(f2_system, filename, perimeters, batch):
                             print(index)
                             return None
                         index += 1
+                time.sleep(0.1)
             elif cmd == "multi_paged_2":
                 left, right, target1, target2 = data.split('-')
                 left = int(left)
@@ -110,6 +111,16 @@ def interpret(f2_system, filename, perimeters, batch):
                 target, command = data.split('-')
                 if perimeters[target] not in window.get_window():
                     interpret(f2_system, command, perimeters, batch)
+            elif cmd == "if_not_else_literal":
+                window.get_window()
+                target, command1, command2 = data.split('-')
+                print(command2
+                      )
+                if target not in window.get_window():
+                    interpret(f2_system, command1, perimeters, batch)
+                else:
+                    interpret(f2_system, command2, perimeters, batch)
+
             elif cmd == "run_script":
                 interpret(f2_system, data, perimeters, batch)
             elif cmd == 'if_not_insert':
@@ -118,10 +129,11 @@ def interpret(f2_system, filename, perimeters, batch):
                     send.send('{INSERT}')
             elif cmd == "if_not_same_line":
                     lines = parse.process_scene(window.get_window())
+
                     target1, target2, command = data.split('-')
                     match = False
                     for line in lines:
-                        if target1 in line and target2 in line:
+                        if perimeters[target1] in line and perimeters[target2] in line:
                             match = True
                             break
                     if not match:
@@ -143,7 +155,7 @@ locations = {"main_menu": navigation.to_main,
              "input_purchases_ps":navigation.to_input_purchase_ps_insert,
              "input_purchases_mix":navigation.to_input_purchase_mix_insert}
 batch_process = {'input_purchase':'scripts/input_purchase.f2s','mix_input_purchase':'scripts/mix_input_purchase.f2s'}
-
+'''
 if __name__ == '__main__':
     filename = 'scripts/enter_shipment.f2s'
     perimeters = {'date':'25/12/17', 'awb': '123-456-789', 'shipment_code':'61-MIAG','logistical_route':'MIA-YYZ (truck)'}
@@ -151,7 +163,7 @@ if __name__ == '__main__':
                     'price': '1.05','quantity':2, 'packing':15,'supplier':'CAPRIN'}, {'assortment':'uni.B0zI5u',
                     'price': '1.05','quantity':65, 'packing':15,'supplier':'CAPRIN'}]
     interpret('f2_Canada',filename, perimeters, batch)
-'''
+
 perimeters = {'assortment':'uni.B0zI5u',
                 'price': '1.05','quantity':55, 'packing':15,'supplier':'CAPRIN'}
 

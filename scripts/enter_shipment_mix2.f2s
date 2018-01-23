@@ -1,0 +1,11 @@
+run_script	scripts/per_purchase_mixbox.f2s
+if_not_else_literal	Airwaybillnummer-scripts/select_shipment2.f2s-scripts/create_shipment.f2s
+send	{ENTER}
+multi_paged_2	6-25-supplier-invoice_num
+if_not_same_line	supplier-invoice_num-scripts/new_invoice.f2s
+send	{ENTER}
+send	{DOWN}
+send	{ENTER}
+batch	mix_input_purchase
+go_to	main_menu
+run_script	scripts/print_purchase_details.f2s

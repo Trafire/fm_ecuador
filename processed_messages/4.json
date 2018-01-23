@@ -1,0 +1,9 @@
+{
+  "command": "scripts/enter_shipment_mix.f2s",
+  "system" : "f2Canada",
+  "parameters": {"date":"10/12/17","awb": "123-456-789", "shipment_code":"50-MIA","logistical_route":"MIA-YYZ (truck)","supplier" : "CACONT","invoice_num":"cfe8224950"},
+  "f2_data": [
+    {"assortment":"ealwhipr0", "box_size":"E04",
+    "price": ".28","quantity":1, "packing":90,"supplier":"CACONT"}
+    ]
+}

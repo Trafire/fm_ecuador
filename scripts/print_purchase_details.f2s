@@ -1,4 +1,5 @@
 go_to	main_menu
+sleep	1.0
 go_to_menu	Purchase-Purchase details (suppl)-Without distribution
 send	{HOME}
 send	{ENTER}

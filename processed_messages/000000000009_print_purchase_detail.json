@@ -1,0 +1,1 @@
+{"f2_data": [], "command": "scripts/print_purchase_details.f2s", "system": "f2Canada", "parameters": {"invoice_num": "9876", "logistical_route": "MIA-YYZ (truck)", "supplier": "CADENS", "shipment_code": "49-MIAG3", "date": "07/12/17", "awb": "123-456-789"}}
