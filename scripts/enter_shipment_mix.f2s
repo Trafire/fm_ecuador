@@ -7,4 +7,3 @@ send	{ENTER}
 send	{DOWN}
 send	{ENTER}
 batch	mix_input_purchase
-run_script	scripts/print_purchase_details.f2s

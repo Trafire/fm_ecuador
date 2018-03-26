@@ -7,7 +7,9 @@ send	{DOWN}
 send	{ENTER}
 send	{DOWN}
 send	' '
-perimeter_copy_paste	logistical_route
+sleep	1.5
+perimeter_send	logistical_route
+sleep	1.5
 send	{ENTER}
 send	{F11}
 sleep	0.5

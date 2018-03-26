@@ -1,7 +1,7 @@
 send	{INSERT}
 send	{F12}
 send	{F10}
-perimeter_send	assortment
+perimeter_send_exact	assortment
 send	{enter}
 send	{F10}
 perimeter_send	quantity

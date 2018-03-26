@@ -28,6 +28,9 @@ def interpret(f2_system, filename, perimeters, batch):
             elif cmd == "perimeter_send":
                 if data in perimeters:
                     send.send(perimeters[data])
+            elif cmd == "perimeter_send_exact":
+                if data in perimeters:
+                    send.send_exact(perimeters[data])
             elif cmd == "batch":
                 batch_file = batch_process[data]
                 for b in batch:
@@ -147,6 +150,7 @@ def interpret(f2_system, filename, perimeters, batch):
             elif cmd == "add_to_supplier":
                 supplier, assortment = data.split('-')
                 database.add_to_supplier(perimeters[supplier],perimeters[assortment])
+
 
 
 
