@@ -1,0 +1,1 @@
+{"f2_data": [{"assortment": "misgrbaM0", "box_size": "Q06", "supplier": "CAQUEE", "packing": "70", "quantity": "4", "price": "0,57"}], "command": "scripts/enter_shipment_mix2.f2s", "system": "f2Canada", "parameters": {"awb": "GROUND", "logistical_route": "MIA-YYZ (truck)", "supplier": "CAQUEE", "date": "18/03/18", "shipment_code": "12-MIA", "invoice_num": "1234"}}

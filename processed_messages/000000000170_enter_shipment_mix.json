@@ -1,0 +1,1 @@
+{"f2_data": [{"price": "4,70", "assortment": "grtruscu+g", "quantity": "2", "packing": "25", "supplier": "CAPINN", "box_size": "H12"}], "system": "f2Canada", "command": "scripts/enter_shipment_mix2.f2s", "parameters": {"date": "04/03/18", "awb": "ground", "invoice_num": " ", "shipment_code": "10-MIA", "supplier": "CAPINN", "logistical_route": "MIA-YYZ (truck)"}}
